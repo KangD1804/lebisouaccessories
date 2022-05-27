@@ -350,14 +350,21 @@
       margin:0,
       responsiveClass:true,
       items:5,
+      responsive:{
+        600:{
+            items:1,
+            nav:false1
+        },
+        900:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    },
       center: true,
       nav: true,
       navText : ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],
       slideBy:1,
-      autoPlay: true,
-      item: 1,
-      animateIn: "fadeIn",
-      animateOut: "fadeOut",
       onDragged: callback      
     });
 
