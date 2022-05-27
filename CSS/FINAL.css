@@ -157,9 +157,14 @@ ul {
   }
 
   /* carousel */
+  .galery > img {
+    width:100px;
+    height: 100px;
+  }
+
   .gallery .owl-item {
-    transform: scale(0.8) !important;
-    transition: 0.5s;
+    transform: scale(0.7) !important;
+    transition:0.4s;
   }
 
   .gallery .owl-item.active.center {
@@ -167,15 +172,15 @@ ul {
   }
 
   .gallery .owl-item.near {
-    transform: scale(0.7) !important;
+    transform: scale(0.5) !important;
   }
 
   .gallery .owl-item.next {
-    transform: scale(0.6) !important;
+    transform: scale(0.5) !important;
   }
 
   .gallery .owl-item.last {
-    transform: scale(0.5) !important;
+    transform: scale(0.4) !important;
   }
 
   .gallery .owl-item.lastest {
