@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">         
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
     <!--LINK CSS-->
     <link rel="stylesheet" href="./CSS/FINAL.css">
     <!--LINK ICON-->
@@ -18,6 +21,7 @@
     <!-- LINK CSS PRODUCT -->
     <link rel="stylesheet" href="./product-slider/product-slider/product-slider.css">
 </head>
+
 <body>
     <!-- nav-bar -->
     <div id="topnav">
@@ -106,12 +110,24 @@
     <!-- end banner freeship -->
 
     <!-- Carousel slider for collection  -->
-
+    <div class="screenshots">
+        <div class="wrapper">
+            <div class="gallery owl-carousel">
+                <img src="./CSS/image/Collection-carousel/z3432563407497_1416c80a2f78154d6ebd03348003ffaf.jpg">
+                <img src="./CSS/image/Collection-carousel/z3432563337187_b08dd54c150b9c1899e6fc9f85a8404f.jpg">
+                <img src="./CSS/image/Collection-carousel/z3432563441844_72472735292e64959272143dd96aa8ec.jpg">
+                <img src="./CSS/image/Collection-carousel/z3432563401586_35bba5d9bff8717203387846e5ad0993.jpg">
+                <img src="./CSS/image/Collection-carousel/z3432563434810_c028cd27b036aa1276d3fb531f8c8f79.jpg">
+                <img src="./CSS/image/Collection-carousel/z3432563445291_25c57b95d1cb6ac5c18aa70893d6dbf2.jpg">
+                <img src="./CSS/image/Collection-carousel/z3432563325497_d89827c7178f66ba04f1faeca022c582.jpg">
+            </div>
+        </div>
+    </div>
     <!-- end slider -->
 
     <!-- content-container -->
         <!-- Sản phẩm bán chạy -->
-    <section class="product"> 
+    <div class="product"> 
         <div class="prod-header">
             <a href="#"><h2 class="product-category">Sản Phẩm Bán Chạy</h2></a>
             <a href="#"><i class="product-more">Xem thêm</i> </a>
@@ -209,10 +225,10 @@
                 </div>
             </div>    
         </div>       
-    </section>
+    </div>
 
         <!-- Sản phẩm mới -->
-    <section class="product"> 
+    <div class="product"> 
         <div class="prod-header">
             <a href="#"><h2 class="product-category">Sản Phẩm Bán Chạy</h2></a>
             <a href="#"><i class="product-more">Xem thêm</i> </a>
@@ -314,11 +330,74 @@
 
         
         
-    </section>
+    </div>
     
     <!-- end content-container -->
         <!-- footer -->
+        <div id="footer">
+            
+        </div>
         <!-- end footer -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+  $(document).ready(function($) {
+    $('.gallery').owlCarousel({
+      loop:true,
+      margin:0,
+      responsiveClass:true,
+      items:5,
+      center: true,
+      nav: true,
+      //navText : ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],//s
+      onDragged: callback      
+    });
+    owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+    
+    $(".center").next().addClass("near");
+    $(".center").prev().addClass("near");
+    
+    $(".center").nextAll().eq(1).addClass("next");
+    $(".center").prevAll().eq(1).addClass("next");
+    
+    $(".center").nextAll().eq(2).addClass("last");
+    $(".center").prevAll().eq(2).addClass("last");
+    
+    $(".center").nextAll().eq(3).addClass("lastest");
+    $(".center").prevAll().eq(3).addClass("lastest");
+    
+    }); 
+
+function callback(event) {
+    
+     $(".owl-item").removeClass("near");
+     $(".owl-item").removeClass("next");
+     $(".owl-item").removeClass("last");
+     $(".owl-item").removeClass("lastest");
+     
+     $(".center").next().addClass("near");
+     $(".center").prev().addClass("near");
+     
+     $(".center").nextAll().eq(1).addClass("next");
+     $(".center").prevAll().eq(1).addClass("next");
+    
+     $(".center").nextAll().eq(2).addClass("last");
+     $(".center").prevAll().eq(2).addClass("last");
+     
+     $(".center").nextAll().eq(3).addClass("lastest");
+     $(".center").prevAll().eq(3).addClass("lastest");
+    }
+     </script>
+     
 </body>
 
 <script src="./product-slider/product-slider/script.js"></script>

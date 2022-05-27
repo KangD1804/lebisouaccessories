@@ -148,6 +148,7 @@ ul {
     display: block;
     text-align: center;
     font-size: 1.5em;
+    padding-bottom: 15px;
   }
 
   .red-word {
@@ -155,4 +156,28 @@ ul {
     font-style: italic;
   }
 
-  
+  /* carousel */
+  .gallery .owl-item {
+    transform: scale(0.8) !important;
+    transition: 0.5s;
+  }
+
+  .gallery .owl-item.active.center {
+    transform: scale(1) !important;
+  }
+
+  .gallery .owl-item.near {
+    transform: scale(0.7) !important;
+  }
+
+  .gallery .owl-item.next {
+    transform: scale(0.6) !important;
+  }
+
+  .gallery .owl-item.last {
+    transform: scale(0.5) !important;
+  }
+
+  .gallery .owl-item.lastest {
+    transform: scale(0.4) !important;
+  }
