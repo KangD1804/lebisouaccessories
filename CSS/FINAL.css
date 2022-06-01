@@ -9,6 +9,10 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+a:visited {
+  color: #000;
+}
+
 #topnav{
     display: flex;
     justify-content: space-around;
@@ -80,7 +84,6 @@ a.cart, i > figcaption{
 
 }
 
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -88,11 +91,7 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-/*   
-  li {
-    float: left;
-} */
-  
+
   li a, .dropbtn {
     display: inline-block;
     background-color: #f6efe9;
@@ -103,11 +102,6 @@ ul {
     border: 1px none;
     font-size: 1rem;
 }
-
-  li a:hover, .dropdown:hover .dropbtn {
-    border-bottom: 1px solid #000;
-}
-
 
   li.dropdown {
     display: inline-block;
