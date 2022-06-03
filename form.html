@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LINK FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
-    <!--LINK CSS-->
-    <link rel="stylesheet" href="./CSS/FINAL.css">
-    <!--LINK ICON-->
+    <!-- LINK ICON -->
     <link rel="stylesheet" href="./CSS/icon/boxicons-2.1.2/css/boxicons.min.css">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./sign up form/form.css">
+    <link rel="stylesheet" href="./CSS/FINAL.css">
     <title>LeBisou Accesories</title>   
     <!--Icon logo-->
     <link rel = "icon" href ="./CSS/image/logo.jpg" type = "image/x-icon">
-
 </head>
 <body>
-        <!-- nav-bar -->
-        <div id="topnav">
-            <a href="#" class="logo">
+    <header id="header">
+          <!-- nav-bar -->
+          <div id="topnav">
+            <a href="./index.html" class="logo">
                 <img src="./CSS/image/logo.jpg" alt="">
             </a>
           
@@ -31,7 +28,7 @@
         
             <div class="header-action">
                 <a href="#" class="cart">
-                    <a href="./sign up form/form.html" target="_blank" id="form">
+                    <a href="./form.html" target="_blank" id="form">
                         <i class='bx bx-log-in-circle bx-tada bx-rotate-90 bx-md'></i>
                     </a>
                     <i class='bx bx-cart-alt  bx-md' ></i> 
@@ -98,5 +95,96 @@
               </div>
         </div>
         <!-- end dropdown menu -->
+    </header>
+      
+   
+    <div class="container">
+        <div class="forms">
+            <!-- form đăng nhập -->
+            <div class="form login">
+                <span class="title">Đăng nhập</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="youremail@email.com" required>
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Mật khẩu" required>
+                        <i class="bx bx-lock icon"></i>
+                        <i class="bx bx-hide showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Lưu thông tin</label>
+                        </div>
+                        
+                        <a href="#" class="text">Quên mật khẩu?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Đăng nhập">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Không phải thành viên?
+                        <a href="#" class="text signup-link">Đăng kí ngay!</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- form đăng kí -->
+            <div class="form signup">
+                <span class="title">Đăng kí</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Họ và tên" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="youremail@email.com" required>
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Tạo mật khẩu" required>
+                        <i class="bx bx-lock icon"></i>
+                        <i class="bx bx-hide showHidePw"></i>
+
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Nhập lại mật khẩu" required>
+                        <i class="bx bx-lock icon"></i>
+                        <i class="bx bx-hide showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">Lưu thông tin</label>
+                        </div>
+                        
+                        <a href="#" class="text">Quên mật khẩu?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Đăng kí">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Đã có tài khoản?
+                        <a href="./form.html" class="text login-link">Đăng nhập ngay!</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./sign up form/form.js"></script>
+
 </body>
 </html>
