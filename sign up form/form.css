@@ -1,4 +1,3 @@
-
 .container{
     position: relative;
     max-width: 430px;
@@ -114,7 +113,7 @@ span.title {
 
 .checkbox-content input{
     margin: 0 8px -2px 4px;
-    accent-color: #f6efe9;
+    accent-color: #F6EFE9;
 }
 
 .form .text{
@@ -155,3 +154,4 @@ span.title {
     margin-top: 30px;
     text-align: center;
 }
+

@@ -1,12 +1,13 @@
-*{
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
+  }
+ 
 html {
   background-color: #f6efe9;
   font-family: "Quicksand", sans-serif;
+  min-height: 100%;
 }
 
 a:visited, a:link {
@@ -127,6 +128,7 @@ ul {
   .dropdown-content a:hover {
     background-color: #f6efe9;
     color: #5c4a4a;
+    font-style: italic;
 }
   
   .dropdown:hover .dropdown-content {
@@ -180,3 +182,70 @@ ul {
   .gallery .owl-item.lastest {
     transform: scale(0.4) !important;
   }
+
+  #body-wrap{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* footer */
+  #footer{
+    background-color: #8b6868;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 1vw 0;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* @media only screen and (max-height:1280px){
+
+  #footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-height:1920px) {
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+} */
