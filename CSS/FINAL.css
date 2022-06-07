@@ -195,6 +195,8 @@ ul {
     flex-direction: column;
     justify-content: space-between;
   }
+
+
   /* footer */
   #footer{
     background-color: #8b6868;
@@ -240,6 +242,8 @@ ul {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  /* end footer */
 
   /* modal */
 
@@ -344,6 +348,8 @@ ul {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* end popup modal */
 
 /* cart */
 .cart-header {
